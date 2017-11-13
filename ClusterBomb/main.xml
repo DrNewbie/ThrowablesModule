@@ -1,0 +1,13 @@
+<mod name="Cluster Bomb" global_key="ClusterBomb">
+	<Localization directory="Loc" default="english.txt"/>
+	<Throwables id="frag_cluster" based_on="concussion" time_cheat="0.1" no_cheat_count="true" unit="units/payday2/weapons/wpn_frag_grenade_com/wpn_frag_grenade_cluster">
+	</Throwables>
+	<Hooks directory="Hooks">
+        <hook file="fraggrenade.lua" source_file="lib/units/weapons/grenades/fraggrenade"/>
+	</Hooks>	
+	<AddFiles directory="Assets">
+		<unit path="units/payday2/weapons/wpn_frag_grenade_com/wpn_frag_grenade_cluster"/>	
+		<!-- https://modworkshop.net/mydownloads.php?action=view_down&did=16704 -->
+		<texture path="guis/textures/pd2/blackmarket/icons/grenades/frag_cluster"/>
+	</AddFiles>
+</mod>

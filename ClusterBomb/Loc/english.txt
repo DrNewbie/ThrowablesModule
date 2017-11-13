@@ -1,0 +1,4 @@
+{
+	"bm_throw_frag_cluster" : "Cluster Bomb",
+	"bm_throw_frag_cluster_desc" : "Why Not?"
+}

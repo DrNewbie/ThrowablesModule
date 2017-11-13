@@ -1,0 +1,7 @@
+<mod name="AddOnThrowablesSync" global_key="AddOnThrowablesSync">
+	<Hooks directory="Hooks">
+        <hook file="blackmarketmanager.lua" source_file="lib/managers/blackmarketmanager"/>
+        <hook file="basenetworksession.lua" source_file="lib/network/base/basenetworksession"/>
+		<hook file="networkpeer.lua" source_file="lib/network/base/networkpeer"/> 
+	</Hooks>
+</mod>
