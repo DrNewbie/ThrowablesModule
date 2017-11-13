@@ -1,0 +1,4 @@
+{
+	"bm_throw_frag_taser" : "Taser Frag",
+	"bm_throw_frag_taser_desc" : "Why Not?"
+}
