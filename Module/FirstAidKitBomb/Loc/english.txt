@@ -1,0 +1,4 @@
+{
+	"bm_throw_frag_fakbomb" : "First-Aid-Kit-Bomb",
+	"bm_throw_frag_fakbomb_desc" : "Heal your teammates and you. (PS: Berserker will block this function)"
+}
