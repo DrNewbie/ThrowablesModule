@@ -28,7 +28,7 @@ function ThrowablesModule:RegisterHook()
 			custom = true,
 			free = true,
 			base_on = self._config.based_on,
-			 icon = icon or "pd2_question"
+			icon = icon or "pd2_question"
 		}, self._config.item or self._config))
 		dlc = data.dlc
 		if not self._config.texture_bundle_folder then
