@@ -1,8 +1,7 @@
 <mod name="FirstAidKitBomb" global_key="FirstAidKitBomb">
 	<Localization directory="Loc" default="english.txt"/>
-	<AssetUpdates id="21316" name="asset_updates" folder_name="FirstAidKitBomb" version="8" provider="modworkshop"/> 
-	<Throwables id="frag_fakbomb" based_on="concussion" desc_id="bm_throw_frag_fakbomb_desc" no_shouting="true" time_cheat="0.1" no_cheat_count="true" unit="units/payday2/weapons/wpn_frag_grenade_com/wpn_frag_grenade_fakbomb">
-	</Throwables>
+	<AssetUpdates id="21316" name="asset_updates" folder_name="FirstAidKitBomb" version="9" provider="modworkshop"/> 
+	<Throwables id="frag_fakbomb" based_on="concussion" desc_id="bm_throw_frag_fakbomb_desc" no_shouting="true" time_cheat="0.1" no_cheat_count="true" icon="csb_health" unit="units/payday2/weapons/wpn_frag_grenade_com/wpn_frag_grenade_fakbomb"/>
 	<Hooks directory="Hooks">
         <hook file="tweakdata.lua" source_file="lib/tweak_data/tweakdata"/>
         <hook file="npcraycastweaponbase.lua" source_file="lib/units/weapons/npcraycastweaponbase"/>
