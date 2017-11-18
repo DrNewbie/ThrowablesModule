@@ -50,10 +50,6 @@ function ThrowablesModule:RegisterHook()
 			dlc = dlc
 		}
 	end)
-	
-	Hooks:PostHook(TweakData, "_init_pd2", self._config.id .. "AddThrowablesTweak2Data", function(t2_self)
-		t2_self.hud_icons[self._config.id] = deep_clone(self.hud_icons[self._config.based_on])
-	end)
 end
 
 BeardLib:RegisterModule(ThrowablesModule.type_name, ThrowablesModule)
