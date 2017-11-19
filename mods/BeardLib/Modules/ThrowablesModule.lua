@@ -35,8 +35,6 @@ function ThrowablesModule:RegisterHook()
 			data.texture_bundle_folder = nil
 		end
 		bm_self.projectiles[self._config.id] = data
-		bm_self.custom_projectiles = bm_self.custom_projectiles or {}
-		bm_self.custom_projectiles[Idstring(self._config.unit):key()] = self._config.unit
 		
 		if not table.contains(bm_self._projectiles_index, self._config.id) then
 			table.insert(bm_self._projectiles_index, self._config.id)

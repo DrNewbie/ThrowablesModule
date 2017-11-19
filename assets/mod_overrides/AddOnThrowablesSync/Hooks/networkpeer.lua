@@ -19,31 +19,34 @@ function FakeSyncFix(peer, d1, d2, d3, d4, d5, ...)
 		end
 	end
 	local _d1 = tostring(d1)
-	if _d1 == 'sync_grenades' and not _c(peer:id(), d2) then
+	if _d1 == 'sync_grenades' then
 		_init(peer, d2)
 		local projectile_tweak = tweak_data.blackmarket.projectiles[d2]
-		if projectile_tweak and projectile_tweak.custom then
+		if projectile_tweak and projectile_tweak.custom and not _c(peer:id(), d2) then
 			d2 = projectile_tweak.base_on or 'concussion'
 		end
 	elseif _d1 == 'sync_unit_event_id_16' and d2 and d2.name and d2:name() then
-		local _d2 = tostring(d2:name():key())
-		local _p = tweak_data.blackmarket.custom_projectiles[_d2]
-		if _p and not _c(peer:id(), _p) then
-			d2 = nil
-		end
-	elseif _d1 == 'sync_throw_projectile' then
-		if d2 and d2.name and d2:name() then
-			local _d2 = tostring(d2:name():key())
-			local _p = tweak_data.blackmarket.custom_projectiles[_d2]
-			if _p and not _c(peer:id(), _p) then
-				d2 = nil
+		if type(d4) == 'number' and d4 == GrenadeBase.EVENT_IDS.detonate then
+			local grenade = peer:grenade_id()
+			grenade = tostring(grenade)
+			if grenade and grenade ~= 'nil' and tweak_data.blackmarket.projectiles[grenade] and tweak_data.blackmarket.projectiles[grenade].unit and tweak_data.blackmarket.projectiles[grenade].custom then
+				if d2:name():key() == Idstring(tweak_data.blackmarket.projectiles[grenade].unit):key() then
+					if not _c(peer:id(), grenade) then
+						d2 = nil
+					end
+				end
 			end
 		end
+	elseif _d1 == 'sync_throw_projectile' then
 		if d5 then
 			local projectile_entry = tostring(tweak_data.blackmarket:get_projectile_name_from_index(d5))
 			local projectile_tweak = tweak_data.blackmarket.projectiles[projectile_entry]
-			if projectile_tweak and not _c(peer:id(), projectile_entry) and projectile_tweak.custom then
-				d5 = tweak_data.blackmarket:get_index_from_projectile_id(tweak_data.blackmarket.projectiles[projectile_entry].base_on or 'concussion')
+			if projectile_tweak and projectile_tweak.custom then
+				if not _c(peer:id(), projectile_entry) then
+					d5 = tweak_data.blackmarket:get_index_from_projectile_id(tweak_data.blackmarket.projectiles[projectile_entry].base_on or 'concussion')
+				else
+					d5 = FakeSyncFixList[peer:id()][projectile_entry]
+				end
 			end
 		end
 	elseif _d1 == 'request_throw_projectile' then
@@ -53,8 +56,12 @@ function FakeSyncFix(peer, d1, d2, d3, d4, d5, ...)
 		local projectile_entry = tostring(tweak_data.blackmarket:get_projectile_name_from_index(d2))
 		local projectile_tweak = tweak_data.blackmarket.projectiles[projectile_entry]
 		_init(peer, projectile_entry)
-		if projectile_tweak and not _c(peer:id(), projectile_entry) and projectile_tweak.custom then
-			d2 = tweak_data.blackmarket:get_index_from_projectile_id(tweak_data.blackmarket.projectiles[projectile_entry].base_on or 'concussion')
+		if projectile_tweak and projectile_tweak.custom then
+			if not _c(peer:id(), projectile_entry) then
+				d2 = tweak_data.blackmarket:get_index_from_projectile_id(tweak_data.blackmarket.projectiles[projectile_entry].base_on or 'concussion')
+			else
+				d2 = FakeSyncFixList[peer:id()][projectile_entry]
+			end
 		end
 	end
 	return d1, d2, d3, d4, d5, ...

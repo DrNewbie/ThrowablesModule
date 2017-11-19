@@ -5,6 +5,5 @@
         <hook file="basenetworksession.lua" source_file="lib/network/base/basenetworksession"/>
 		<hook file="networkpeer.lua" source_file="lib/network/base/networkpeer"/> 
 		<hook file="SyncCheck.lua" source_file="lib/managers/localizationmanager"/> 
-		<hook file="SyncAsk.lua" source_file="lib/network/base/hostnetworksession"/> 
 	</Hooks>
 </mod>

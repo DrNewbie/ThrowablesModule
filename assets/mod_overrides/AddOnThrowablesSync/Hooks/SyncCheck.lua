@@ -8,14 +8,14 @@ Hooks:Add("NetworkReceivedData", "NetReceived_AddOnThrowablesSync", function(sen
 			data = tostring(data)
 			sender = tonumber(sender)
 			if sender >= 1 and tweak_data.blackmarket.projectiles[data] then
-				_Net:SendToPeer(sender, "AddOnFragReply", data)
+				_Net:SendToPeer(sender, "AddOnFragReply", data..',,,'..tweak_data.blackmarket:get_index_from_projectile_id(data))
 			end
 		elseif sync_asked == "AddOnFragReply" then
-			data = tostring(data)
+			data = string.split(tostring(data), ",,,")
 			sender = tonumber(sender)
 			if sender >= 1 then
 				FakeSyncFixList[sender] = FakeSyncFixList[sender] or {}
-				FakeSyncFixList[sender][data] = true
+				FakeSyncFixList[sender][data[1]] = tonumber(data[2])
 			end
 		end
 	end
