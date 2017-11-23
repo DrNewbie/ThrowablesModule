@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<unit type="wpn" slot="14">
+	<object file="units/payday2/weapons/wpn_prj_four_poison/wpn_prj_four_poison_husk" />
+	<extensions>
+		<extension name="unit_data" class="ScriptUnitData" />
+	</extensions>
+</unit>

@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<unit type="gen" slot="13">
+	<network sync="spawn" />
+	<object file="units/payday2/weapons/wpn_prj_four_poison/wpn_prj_four_poison" />
+	<dependencies>
+		<depends_on bnk="soundbanks/regular_weapon_sfx" />
+	</dependencies>
+	<extensions>
+		<extension name="base" class="ArrowBase" >
+			<var name="_tweak_projectile_entry" value="wpn_prj_four_poison" />
+		</extension>
+		<extension name="unit_data" class="ScriptUnitData" />
+		<extension name="damage" class="UnitDamage" >
+			<var name="_skip_give_body_collision_damage" value="true" />
+		</extension>
+		<extension name="pickup" class="AmmoClip" >
+			<var name="_projectile_id" value="wpn_prj_four_poison" />
+			<var name="_ammo_count" value="1" />
+			<var name="_pickup_event" value="wp_four_pick_up" />
+		</extension>
+		<extension name="contour" class="ContourExt" />
+	</extensions>
+	<sounds>
+		<default_soundsource source="rp_wpn_third_thr_four" />
+		<soundsource name="snd" source="rp_wpn_third_thr_four" />
+	</sounds>
+</unit>

@@ -1,0 +1,29 @@
+<mod name="Poison Kunai" global_key="PoisonKunai">
+	<Localization directory="Loc" default="english.txt"/>
+	<AssetUpdates id="21367" name="asset_updates" version="2" folder_name="PoisonKunai" provider="modworkshop"/>
+	<Throwables id="wpn_prj_four_poison" based_on="wpn_prj_four" icon="wp_arrow" time_cheat="0.1" no_cheat_count="true" unit="units/payday2/weapons/wpn_prj_four_poison/wpn_prj_four_poison" unit_dummy="units/payday2/weapons/wpn_prj_four_poison/wpn_prj_four_poison_husk">
+	</Throwables>
+	<Hooks directory="Hooks">
+        <hook file="tweakdata.lua" source_file="lib/tweak_data/tweakdata"/>
+	</Hooks>	
+	<AddFiles directory="Assets">
+		<!-- http://modwork.shop/12930 -->
+		<unit path="units/payday2/weapons/wpn_prj_four_poison/wpn_prj_four_poison" force="true"/>	
+		<cooked_physics path="units/payday2/weapons/wpn_prj_four_poison/wpn_prj_four_poison" force="true"/>	
+		<material_config path="units/payday2/weapons/wpn_prj_four_poison/wpn_prj_four_poison" force="true"/>	
+		<object path="units/payday2/weapons/wpn_prj_four_poison/wpn_prj_four_poison" force="true"/>	
+		<model path="units/payday2/weapons/wpn_prj_four_poison/wpn_prj_four_poison" force="true"/>	
+		<texture path="units/payday2/weapons/wpn_prj_four_poison/wpn_prj_four_poison_df" force="true"/>	
+		<texture path="units/payday2/weapons/wpn_prj_four_poison/wpn_prj_four_poison_nm" force="true"/>	
+
+		<unit path="units/payday2/weapons/wpn_prj_four_poison/wpn_prj_four_poison_husk" force="true"/>	
+		<cooked_physics path="units/payday2/weapons/wpn_prj_four_poison/wpn_prj_four_poison_husk" force="true"/>	
+		<material_config path="units/payday2/weapons/wpn_prj_four_poison/wpn_prj_four_poison_husk" force="true"/>	
+		<object path="units/payday2/weapons/wpn_prj_four_poison/wpn_prj_four_poison_husk" force="true"/>	
+		<model path="units/payday2/weapons/wpn_prj_four_poison/wpn_prj_four_poison_husk" force="true"/>	
+		<texture path="units/payday2/weapons/wpn_prj_four_poison/wpn_prj_four_poison_husk_df" force="true"/>	
+		<texture path="units/payday2/weapons/wpn_prj_four_poison/wpn_prj_four_poison_husk_nm" force="true"/>	
+		
+		<texture path="guis/textures/pd2/blackmarket/icons/grenades/wpn_prj_four_poison" force="true"/>
+	</AddFiles>
+</mod>

@@ -1,0 +1,4 @@
+{
+	"bm_throw_wpn_prj_four_poison" : "Poison Kunai",
+	"bm_throw_wpn_prj_four_poison_desc" : " "
+}
