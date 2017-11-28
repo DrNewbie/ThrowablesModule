@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<unit type="item" slot="14">
+	<object file="units/payday2/weapons/wpn_frag_grenade_com/wpn_frag_grenade_medicbomb"/>
+	<extensions/>
+	<sounds>
+		<default_soundsource source="rp_gen_equipment_medicbag"/>
+	</sounds>
+</unit>

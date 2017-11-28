@@ -1,0 +1,4 @@
+{
+	"bm_throw_frag_medicbomb" : "Medic Bomb",
+	"bm_throw_frag_medicbomb_desc" : "Help your teammates up!"
+}
