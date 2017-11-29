@@ -1,7 +1,7 @@
 <mod name="MedicBomb" global_key="MedicBomb">
 	<Localization directory="Loc" default="english.txt"/>
-	<AssetUpdates id="21437" name="asset_updates" folder_name="MedicBomb" version="3" provider="modworkshop"/> 
-	<Throwables id="frag_medicbomb" based_on="concussion" desc_id="bm_throw_frag_medicbomb_desc" no_shouting="true" time_cheat="0.1" no_cheat_count="true" icon="csb_health" unit="units/payday2/weapons/wpn_frag_grenade_com/wpn_frag_grenade_medicbomb" unit_dummy="units/payday2/weapons/wpn_frag_grenade_com/wpn_frag_grenade_medicbomb_dummy_unit"/>
+	<AssetUpdates id="21437" name="asset_updates" folder_name="MedicBomb" version="4" provider="modworkshop"/> 
+	<Throwables id="frag_medicbomb" based_on="concussion" desc_id="bm_throw_frag_medicbomb_desc" no_shouting="true" time_cheat="0.1" no_cheat_count="true" icon="csb_health" max_amount="3" unit="units/payday2/weapons/wpn_frag_grenade_com/wpn_frag_grenade_medicbomb" unit_dummy="units/payday2/weapons/wpn_frag_grenade_com/wpn_frag_grenade_medicbomb_dummy_unit"/>
 	<Hooks directory="Hooks">
 		<hook file="tweakdata.lua" source_file="lib/tweak_data/tweakdata"/>
 		<hook file="fraggrenade.lua" source_file="lib/units/weapons/grenades/fraggrenade"/>
