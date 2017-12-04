@@ -19,9 +19,3 @@ function BaseNetworkSession:check_send_outfit(peer)
 		end
 	end
 end
-
-function BaseNetworkSession:send_to_peers_synched(...)
-	for peer_id, peer in pairs(self._peers) do
-		peer:send_queued_sync(FakeSyncFix(peer, ...))
-	end
-end

@@ -69,12 +69,8 @@ function FakeSyncFix(peer, d1, d2, d3, d4, d5, ...)
 	return d1, d2, d3, d4, d5, ...
 end
 
+local AddOnThrowablesSync_Net_send_queued_sync = NetworkPeer.send_queued_sync
+
 function NetworkPeer:send_queued_sync(...)
-	if not self._ip_verified then
-		Application:error("[NetworkPeer:send_queued_sync] ip unverified:", ...)
-		return
-	end
-	if self._synced or self._syncing then
-		self:_send_queued("sync", FakeSyncFix(self, ...))
-	end
+	AddOnThrowablesSync_Net_send_queued_sync(self, FakeSyncFix(self, ...))
 end
