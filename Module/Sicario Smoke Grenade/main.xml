@@ -1,0 +1,14 @@
+<mod name="Sicario Smoke Grenade">
+	<Localization directory="Loc" default="english.txt"/>
+	<AssetUpdates id="22685" version="3" provider="modworkshop" use_local_dir="true" use_local_path="true"/>
+	<Throwables id="frag_smoke_ply" based_on="concussion" desc_id="bm_throw_frag_smoke_ply_desc" time_cheat="0.1" no_cheat_count="true" unit="units/payday2/weapons/wpn_frag_grenade_com/wpn_frag_smoke_ply">
+	</Throwables>
+	<Hooks directory="Hooks">
+		<hook file="tweakdata.lua" source_file="lib/tweak_data/tweakdata"/>
+		<hook file="fraggrenade.lua" source_file="lib/units/weapons/grenades/fraggrenade"/>
+	</Hooks>	
+	<AddFiles directory="Assets">
+		<unit path="units/payday2/weapons/wpn_frag_grenade_com/wpn_frag_smoke_ply"/>
+		<texture path="guis/textures/pd2/blackmarket/icons/grenades/frag_smoke_ply"/>
+	</AddFiles>
+</mod>

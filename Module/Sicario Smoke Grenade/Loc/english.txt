@@ -1,0 +1,4 @@
+{
+	"bm_throw_frag_smoke_ply" : "Smoke Grenade",
+	"bm_throw_frag_smoke_ply_desc" : "Smoke!!"
+}
