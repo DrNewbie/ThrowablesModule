@@ -1,6 +1,6 @@
 <mod name="Sicario Smoke Bomb">
 	<Localization directory="Loc" default="english.txt"/>
-	<AssetUpdates id="22685" version="5" provider="modworkshop" use_local_dir="true" use_local_path="true"/>
+	<AssetUpdates id="22685" version="7" provider="modworkshop" use_local_dir="true" use_local_path="true"/>
 	<Throwables 
 		id="frag_smoke_ply" 
 		based_on="concussion" 
@@ -17,7 +17,7 @@
 	</Throwables>
 	<Hooks directory="Hooks">
 		<hook file="tweakdata.lua" source_file="lib/tweak_data/tweakdata"/>
-		<hook file="fraggrenade.lua" source_file="lib/units/weapons/grenades/fraggrenade"/>
+		<hook file="smokescreengrenade.lua" source_file="lib/units/weapons/grenades/smokescreengrenade"/>
 	</Hooks>	
 	<AddFiles directory="Assets">
 		<unit path="units/payday2/weapons/wpn_frag_grenade_com/wpn_frag_smoke_ply"/>

@@ -13,7 +13,8 @@
 		<depends_on bnk="soundbanks/weapon_lung" />
 	</dependencies>
 	<extensions>
-		<extension name="base" class="FragGrenade">
+		<extension name="base" class="SmokeScreenGrenade">
+			<var name="_tweak_projectile_entry" value="smoke_screen_grenade" />
 			<var name="_new_frag" value="frag_smoke_ply" />
 		</extension>
 		<extension name="unit_data" class="ScriptUnitData" />
