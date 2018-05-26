@@ -1,7 +1,19 @@
 <mod name="Sicario Smoke Bomb">
 	<Localization directory="Loc" default="english.txt"/>
-	<AssetUpdates id="22685" version="4" provider="modworkshop" use_local_dir="true" use_local_path="true"/>
-	<Throwables id="frag_smoke_ply" based_on="concussion" icon="smoke_screen_grenade" animation="throw_grenade_com" anim_global_param="projectile_frag_com" no_shouting="true" desc_id="bm_throw_frag_smoke_ply_desc" time_cheat="0.1" no_cheat_count="true" unit="units/payday2/weapons/wpn_frag_grenade_com/wpn_frag_smoke_ply" unit_dummy="units/pd2_dlc_max/weapons/wpn_fps_smoke_screen_grenade/wpn_fps_smoke_screen_grenade_husk" sprint_unit="units/pd2_dlc_max/weapons/wpn_fps_smoke_screen_grenade/wpn_third_smoke_screen_grenade_sprint">
+	<AssetUpdates id="22685" version="5" provider="modworkshop" use_local_dir="true" use_local_path="true"/>
+	<Throwables 
+		id="frag_smoke_ply" 
+		based_on="concussion" 
+		icon="smoke_screen_grenade" 
+		animation="throw_grenade_com" 
+		anim_global_param="projectile_frag_com" 
+		no_shouting="true" 
+		desc_id="bm_throw_frag_smoke_ply_desc" 
+		time_cheat="0.1" 
+		no_cheat_count="true" 
+		unit="units/payday2/weapons/wpn_frag_grenade_com/wpn_frag_smoke_ply" 
+		sprint_unit="units/pd2_dlc_max/weapons/wpn_fps_smoke_screen_grenade/wpn_third_smoke_screen_grenade_sprint"
+		>
 	</Throwables>
 	<Hooks directory="Hooks">
 		<hook file="tweakdata.lua" source_file="lib/tweak_data/tweakdata"/>
