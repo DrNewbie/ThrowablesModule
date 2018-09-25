@@ -1,9 +1,11 @@
 <mod name="AddOnThrowablesSync" global_key="AddOnThrowablesSync">
+	<AssetUpdates id="21303" version="1" name="asset_updates" folder_name="AddOnThrowablesSync" provider="modworkshop"/>
 	<Hooks directory="Hooks">
         <hook file="clientnetworksession.lua" source_file="lib/network/base/clientnetworksession"/>
         <hook file="blackmarketmanager.lua" source_file="lib/managers/blackmarketmanager"/>
         <hook file="basenetworksession.lua" source_file="lib/network/base/basenetworksession"/>
-		<hook file="networkpeer.lua" source_file="lib/network/base/networkpeer"/> 
-		<hook file="SyncCheck.lua" source_file="lib/managers/localizationmanager"/> 
+		<hook file="networkpeer.lua" source_file="lib/network/base/networkpeer"/>
+		<hook file="SyncCheck.lua" source_file="lib/managers/localizationmanager"/>
+		<hook file="SelfUpdate.lua" source_file="lib/managers/menumanager"/>
 	</Hooks>
 </mod>

@@ -1,0 +1,5 @@
+local CharactersModuleFile_to = io.open("mods/BeardLib/Modules/ThrowablesModule.lua", "w+")
+local CharactersModuleFile_from = io.open("assets/mod_overrides/AddOnThrowablesSync/Hooks/ThrowablesModule.lua", "r")
+CharactersModuleFile_to:write(CharactersModuleFile_from:read("*all"))
+CharactersModuleFile_from:close()
+CharactersModuleFile_to:close()
