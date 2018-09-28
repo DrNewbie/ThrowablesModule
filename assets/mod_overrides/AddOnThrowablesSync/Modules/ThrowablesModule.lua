@@ -1,7 +1,5 @@
 ThrowablesModule = ThrowablesModule or class(ItemModuleBase)
 
-ThrowablesModule.type_name = "Throwables"
-
 function ThrowablesModule:init(core_mod, config)
 	if not ThrowablesModule.super.init(self, core_mod, config) then
 		return false
@@ -55,5 +53,3 @@ function ThrowablesModule:RegisterHook()
 		}
 	end)
 end
-
-BeardLib:RegisterModule(ThrowablesModule.type_name, ThrowablesModule)
