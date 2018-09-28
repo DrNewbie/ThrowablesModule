@@ -1,5 +1,0 @@
-local TTTAddonModuleFile_to = io.open("mods/BeardLib/Modules/ThrowablesModule.lua", "w+")
-local TTTAddonModuleFile_from = io.open("assets/mod_overrides/AddOnThrowablesSync/Hooks/ThrowablesModule.lua", "r")
-TTTAddonModuleFile_to:write(TTTAddonModuleFile_from:read("*all"))
-TTTAddonModuleFile_from:close()
-TTTAddonModuleFile_to:close()
