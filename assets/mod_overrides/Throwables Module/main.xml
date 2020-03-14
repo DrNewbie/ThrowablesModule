@@ -1,5 +1,5 @@
-<mod name="AddOnThrowablesSync">
-	<AssetUpdates id="21303" version="4" provider="modworkshop"/>
+<mod name="Throwables Module">
+	<AssetUpdates id="21303" version="5" provider="modworkshop"/>
 	<Hooks directory="Hooks">
         <hook file="clientnetworksession.lua" source_file="lib/network/base/clientnetworksession"/>
         <hook file="blackmarketmanager.lua" source_file="lib/managers/blackmarketmanager"/>
