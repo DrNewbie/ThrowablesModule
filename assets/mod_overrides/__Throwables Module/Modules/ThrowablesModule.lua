@@ -10,21 +10,6 @@ end
 function ThrowablesModule:RegisterHook()
 	local dlc
 	Hooks:PostHook(BlackMarketTweakData, "_init_projectiles", self._config.id .. "AddThrowablesData", function(bm_self, tweak_data)
-		log( tostring(self._config.id) )
-		log( tostring(self._config.id) )
-		log( tostring(self._config.id) )
-		log( tostring(self._config.id) )
-		log( tostring(self._config.id) )
-		log( tostring(self._config.id) )
-		log( tostring(self._config.id) )
-		log( tostring(self._config.id) )
-		log( tostring(self._config.id) )
-		log( tostring(self._config.id) )
-		log( tostring(self._config.id) )
-		log( tostring(self._config.id) )
-		log( tostring(self._config.id) )
-		log( tostring(self._config.id) )
-		log( tostring(self._config.id) )
 		if bm_self.projectiles[self._config.id] then
 			BeardLib:log("[ERROR] Throwables weapon with id '%s' already exists!", self._config.id)
 			return
