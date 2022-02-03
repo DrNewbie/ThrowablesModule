@@ -1,5 +1,5 @@
 <mod name="Throwables Module" priority="1001">
-	<AssetUpdates id="Throwables Module" version="8">
+	<AssetUpdates id="Throwables Module" version="9">
         <custom_provider version_api_url="https://drnewbie.github.io/ThrowablesModule/Release/Throwables%20Module.txt" download_url="https://drnewbie.github.io/ThrowablesModule/Release/Throwables%20Module.zip"/>
     </AssetUpdates>
 	<Hooks directory="Hooks">
@@ -8,6 +8,8 @@
         <hook file="basenetworksession.lua" source_file="lib/network/base/basenetworksession"/>
 		<hook file="networkpeer.lua" source_file="lib/network/base/networkpeer"/>
 		<hook file="projectileweaponbase.lua" source_file="lib/units/weapons/projectileweaponbase"/>
+		<hook file="projectilebase.lua" source_file="lib/units/weapons/projectiles/projectilebase"/>
+		<hook file="playerequipment.lua" source_file="lib/units/beings/player/playerequipment"/>
 		<hook file="SyncCheck.lua" source_file="lib/managers/localizationmanager"/>
 	</Hooks>
 	<Modules directory="Modules">
