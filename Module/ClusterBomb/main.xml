@@ -1,15 +1,16 @@
 <mod name="Cluster Bomb" global_key="ClusterBomb">
 	<Localization directory="Loc" default="english.txt"/>
-	<AssetUpdates id="21202" name="asset_updates" version="3" folder_name="ClusterBomb" provider="modworkshop"/>
-	<Throwables id="frag_cluster" based_on="concussion" time_cheat="0.1" no_cheat_count="true" unit="units/payday2/weapons/wpn_frag_grenade_com/wpn_frag_grenade_cluster">
+	<AssetUpdates id="21202" name="asset_updates" version="4" provider="modworkshop"/>
+	<Throwables id="frag_cluster" based_on="concussion" time_cheat="0.1" no_cheat_count="true" unit="units/payday2/weapons/wpn_frag_grenade_com/wpn_frag_grenade_cluster" local_unit="units/payday2/weapons/wpn_frag_grenade_com/wpn_frag_grenade_cluster">
 	</Throwables>
 	<Hooks directory="Hooks">
 		<hook file="tweakdata.lua" source_file="lib/tweak_data/tweakdata"/>
 		<hook file="fraggrenade.lua" source_file="lib/units/weapons/grenades/fraggrenade"/>
+		<hook file="use_new_throw_projectile_func.lua" source_file="lib/units/beings/player/states/playerstandard"/>
 	</Hooks>	
 	<AddFiles directory="Assets">
 		<unit path="units/payday2/weapons/wpn_frag_grenade_com/wpn_frag_grenade_cluster"/>	
-		<!-- https://modworkshop.net/mydownloads.php?action=view_down&did=16704 -->
+		<!-- https://modworkshop.net/mod/16704 -->
 		<texture path="guis/textures/pd2/blackmarket/icons/grenades/frag_cluster"/>
 	</AddFiles>
 </mod>
