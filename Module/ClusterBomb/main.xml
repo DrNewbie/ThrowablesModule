@@ -1,6 +1,10 @@
 <mod name="Cluster Bomb" global_key="ClusterBomb">
 	<Localization directory="Loc" default="english.txt"/>
-	<AssetUpdates id="21202" name="asset_updates" version="4" provider="modworkshop"/>
+	<AssetUpdates id="ClusterBomb" version="4">
+        <custom_provider 
+			version_api_url="https://drnewbie.github.io/ThrowablesModule/Release/ClusterBomb.txt" 
+			download_url="https://drnewbie.github.io/ThrowablesModule/Release/ClusterBomb.zip"/>
+    </AssetUpdates>
 	<Throwables id="frag_cluster" based_on="concussion" time_cheat="0.1" no_cheat_count="true" unit="units/payday2/weapons/wpn_frag_grenade_com/wpn_frag_grenade_cluster" local_unit="units/payday2/weapons/wpn_frag_grenade_com/wpn_frag_grenade_cluster">
 	</Throwables>
 	<Hooks directory="Hooks">
