@@ -1,0 +1,17 @@
+<table directory="assets">
+	<texture path="guis/dlcs/xm21/textures/pd2/blackmarket/icons/grenades/xmas_snowball"/>
+	<sequence_manager path="units/pd2_dlc_xm21/weapons/wpn_xmas_snowball/wpn_xmas_snowball"/>
+	<texture path="units/pd2_dlc_xm21/weapons/wpn_xmas_snowball/wpn_xmas_snowball_df"/>
+	<texture path="units/pd2_dlc_xm21/weapons/wpn_xmas_snowball/wpn_xmas_snowball_nm"/>
+	<model path="units/pd2_dlc_xm21/weapons/wpn_xmas_snowball/wpn_xmas_snowball_husk"/>
+	<material_config path="units/pd2_dlc_xm21/weapons/wpn_xmas_snowball/wpn_xmas_snowball_husk"/>
+	<object path="units/pd2_dlc_xm21/weapons/wpn_xmas_snowball/wpn_xmas_snowball_husk"/>
+	<material_config path="units/pd2_dlc_xm21/weapons/wpn_xmas_snowball/wpn_xmas_snowball"/>
+	<unit path="units/pd2_dlc_xm21/weapons/wpn_xmas_snowball/wpn_xmas_snowball_husk"/>
+	<cooked_physics path="units/pd2_dlc_xm21/weapons/wpn_xmas_snowball/wpn_xmas_snowball_husk"/>
+	<cooked_physics path="units/pd2_dlc_xm21/weapons/wpn_xmas_snowball/wpn_xmas_snowball"/>
+	<model path="units/pd2_dlc_xm21/weapons/wpn_xmas_snowball/wpn_xmas_snowball"/>
+	<object path="units/pd2_dlc_xm21/weapons/wpn_xmas_snowball/wpn_xmas_snowball"/>
+	<unit path="units/pd2_dlc_xm21/weapons/wpn_xmas_snowball/wpn_xmas_snowball_local"/>
+	<unit path="units/pd2_dlc_xm21/weapons/wpn_xmas_snowball/wpn_xmas_snowball"/>
+</table>
