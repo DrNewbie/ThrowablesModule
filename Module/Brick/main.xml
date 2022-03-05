@@ -1,0 +1,37 @@
+<table name="Brick">
+	<Localization directory="loc" default="english.txt"/>
+	<AddFiles directory="assets" auto_generate="true"/>
+	<AssetUpdates id="Brick" version="1">
+        <custom_provider 
+			version_api_url="https://drnewbie.github.io/ThrowablesModule/Release/Brick.txt" 
+			download_url="https://drnewbie.github.io/ThrowablesModule/Release/Brick.zip"/>
+    </AssetUpdates>
+	<Throwables id="wpn_prj_brick" 
+		based_on="wpn_prj_hur" 
+		name_id="bm_grenade_prj_brick"
+		desc_id = "bm_grenade_prj_brick_desc"
+		unit="units/pd2_dlc_born/weapons/wpn_fps_mel_hur/wpn_prj_brick"
+		unit_dummy="units/pd2_dlc_born/weapons/wpn_fps_mel_hur/wpn_prj_brick_husk"
+		local_unit="units/pd2_dlc_born/weapons/wpn_fps_mel_hur/wpn_prj_brick_local"
+		icon="throwing_axe"
+		throw_shout="true"
+		no_cheat_count="true"
+		impact_detonation="true"
+		client_authoritative="true"
+		add_trail_effect="true"
+		throwable="true"
+		texture_bundle_folder="born"
+		dlc="born"
+		max_amount="3"
+		anim_global_param="projectile_four"
+		throw_allowed_expire_t="0.15"
+		expire_t="1.1"
+		repeat_expire_t="0.5"
+		base_cooldown="30"
+	/>
+	<Hooks directory="Hooks">
+		<hook file="tweakdata.lua" source_file="lib/tweak_data/tweakdata"/>
+		<hook file="raycastweaponbase.lua" source_file="lib/units/weapons/raycastweaponbase"/>
+		<hook file="use_new_throw_projectile_func.lua" source_file="lib/units/beings/player/states/playerstandard"/>
+	</Hooks>
+</table>

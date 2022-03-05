@@ -1,0 +1,6 @@
+<dynamic_object>
+	<diesel materials="units/pd2_dlc_born/weapons/wpn_fps_mel_hur/wpn_prj_brick_husk" orientation_object="rp_wpn_prj_hur_husk" />
+	<graphics>
+		<object name="g_axe" enabled="true" />
+	</graphics>
+</dynamic_object>

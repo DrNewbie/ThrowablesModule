@@ -1,0 +1,17 @@
+<table directory="assets">
+	<animation path="anims/fps/unarmed/throw_four"/>
+	<texture path="units/pd2_dlc_born/weapons/wpn_fps_mel_hur/throwing_brick_df"/>
+	<texture path="units/pd2_dlc_born/weapons/wpn_fps_mel_hur/throwing_brick_nm"/>
+	<texture path="guis/dlcs/born/textures/pd2/blackmarket/icons/grenades/wpn_prj_brick"/>
+	<animation path="anims/fps/unarmed/throw_four_equip"/>
+	<animation path="anims/fps/unarmed/throw_four_idle"/>
+	<model path="units/pd2_dlc_born/weapons/wpn_fps_mel_hur/wpn_prj_brick_husk"/>
+	<model path="units/pd2_dlc_born/weapons/wpn_fps_mel_hur/wpn_prj_brick"/>
+	<object path="units/pd2_dlc_born/weapons/wpn_fps_mel_hur/wpn_prj_brick"/>
+	<object path="units/pd2_dlc_born/weapons/wpn_fps_mel_hur/wpn_prj_brick_husk"/>
+	<material_config path="units/pd2_dlc_born/weapons/wpn_fps_mel_hur/wpn_prj_brick_husk"/>
+	<material_config path="units/pd2_dlc_born/weapons/wpn_fps_mel_hur/wpn_prj_brick"/>
+	<unit path="units/pd2_dlc_born/weapons/wpn_fps_mel_hur/wpn_prj_brick"/>
+	<unit path="units/pd2_dlc_born/weapons/wpn_fps_mel_hur/wpn_prj_brick_husk"/>
+	<unit path="units/pd2_dlc_born/weapons/wpn_fps_mel_hur/wpn_prj_brick_local"/>
+</table>
