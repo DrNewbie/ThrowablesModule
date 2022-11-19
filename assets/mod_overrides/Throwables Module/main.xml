@@ -1,5 +1,5 @@
 <mod name="Throwables Module" priority="1001">
-	<AssetUpdates id="Throwables Module" version="9">
+	<AssetUpdates id="Throwables Module" version="10">
         <custom_provider version_api_url="https://drnewbie.github.io/ThrowablesModule/Release/Throwables%20Module.txt" download_url="https://drnewbie.github.io/ThrowablesModule/Release/Throwables%20Module.zip"/>
     </AssetUpdates>
 	<Hooks directory="Hooks">
