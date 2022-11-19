@@ -13,7 +13,7 @@ function PlayerEquipment:throw_grenade(...)
 			end
 			local grenade_index = tweak_data.blackmarket:get_index_from_projectile_id(grenade_name)
 			AddonProjectileBase.throw_projectile(grenade_name, pos, dir, managers.network:session():local_peer():id())
-			managers.player:verify_grenade(managers.network:session():local_peer():id())
+			--managers.player:verify_grenade(managers.network:session():local_peer():id())
 			managers.player:on_throw_grenade()
 			return
 		end
@@ -37,7 +37,7 @@ function PlayerEquipment:throw_projectile(...)
 			end
 			local projectile_index = tweak_data.blackmarket:get_index_from_projectile_id(projectile_entry)
 			AddonProjectileBase.throw_projectile(projectile_entry, pos, dir, managers.network:session():local_peer():id())
-			managers.player:verify_grenade(managers.network:session():local_peer():id())
+			--managers.player:verify_grenade(managers.network:session():local_peer():id())
 			managers.player:on_throw_grenade()
 			return
 		end
